@@ -75,6 +75,29 @@ function startAnimation(){
 
     .to(frames,updateFrame(200),"b")
     .to(".animate2",{opacity:1,ease:"linear"},"b")
+
+    .to(frames,updateFrame(300),"c")
+    .to(".animate2",{opacity:1,ease:"linear"},"c")
+
+    .to(frames,updateFrame(350),"d")
+    .to(".animate2",{opacity:0,ease:"linear"},"d")
+
+
+    .to(frames,updateFrame(500),"e")
+    .to(".animate3",{opacity:1,ease:"linear"},"e")
+
+    .to(frames,updateFrame(600),"f")
+    .to(".animate3",{opacity:0,ease:"linear"},"f")
+
+    .to(frames,updateFrame(750),"g")
+    .to(".panel",{x:"0%",ease:"expo"},"g")
+
+    .to(frames,updateFrame(800),"h")
+    .to(".panel",{x:"0%",ease:"expo"},"h")
+
+    .to(frames,updateFrame(900),"i")
+    .to(".panel",{opacity:0,ease:"expo"},"i")
+
         
 
 }
