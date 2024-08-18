@@ -71,7 +71,10 @@ function startAnimation(){
     tl
     .to(frames,updateFrame(100),"a")
     .to(".animate1",{opacity:0,ease:"linear"},"a")
-    // tl.to(frames,updateFrame(frames.maxIndex))
+
+
+    .to(frames,updateFrame(200),"b")
+    .to(".animate2",{opacity:1,ease:"linear"},"b")
         
 
 }
