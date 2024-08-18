@@ -108,5 +108,18 @@ function startAnimation() {
 window.addEventListener("resize", function () {
   loadImage(Math.floor(frames.currentIndex));
 });
+document.querySelectorAll(".headings h3")
+.forEach(function(elem){
+    gsap.from(elem,{
+        scrollTrigger:{
+            trigger:elem,
+            start:"top 90%",
+            end:"botttom 20%",
+            scrub:2,
+
+        },
+        opacity:0.3
+    })
+})
 
 preloadImages();
