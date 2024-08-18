@@ -3,73 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="w-full  bg-zinc-900">
-      <div class="parent relative w-full h-[2400vh] ">
+    <div class="w-full bg-zinc-900">
+      <div class="parent relative w-full h-[2400vh]">
         <div class="w-full h-screen sticky top-0 left-0 overflow-x-hidden">
-            <canvas class="h-screen w-full" id="canvas"></canvas>
-            <div class="animate1 absolute z-[2] text-white bottom-10 w-1/2 left-10">
-                <h1 class="leading-20 font-[110] text-3xl  uppercase">  
-                    &copy; 2024 DOZE STD  </h1>
-                    <h1 class="text-3xl uppercase"> Shaping brands  →  Crafting motion → </h1>
-            </div>
+          <canvas class="h-screen w-full" id="canvas"></canvas>
+          <div
+            class="animate1 absolute z-[2] text-white bottom-10 w-1/2 left-10"
+          >
+            <h1 class="leading-20 font-[110] text-3xl uppercase">
+              &copy; 2024 DOZE STD
+            </h1>
+            <h1 class="text-3xl uppercase">
+              Shaping brands → Crafting motion →
+            </h1>
+          </div>
 
-            <div class="animate2 absolute flex gap-2  z-[2] text-white bottom-10 w-1/2 right-10 text-right opacity-0">
-                <h1 class="leading-20 font-[100] text-6xl  uppercase">  
-                    Transforming visions </h1>
-                    <h1 class="text-lg w-[45%]"> Building identify and inspiring action.Sculpting digital experience resonate.</h1>
-            </div>
+          <div
+            class="animate2 absolute flex gap-2 z-[2] text-white bottom-10 w-1/2 right-10 text-right opacity-0"
+          >
+            <h1 class="leading-20 font-[100] text-6xl uppercase">
+              Transforming visions
+            </h1>
+            <h1 class="text-lg w-[45%]">
+              Building identify and inspiring action.Sculpting digital
+              experience resonate.
+            </h1>
+          </div>
 
-            <div class="animate3 absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center  z-[2] opacity-0">
-                <h1 class="leading-20 font-[100] text-6xl  uppercase">  
-                    Elevating Aesthetics </h1>
-                    <h1 class="text-xl">h1>Crafting solutions and exploring new horizons. Evolivng narratives and elevating  aesthetics in every project.</h1>
+          <div
+            class="animate3 absolute text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center z-[2] opacity-0"
+          >
+            <h1 class="leading-20 font-[100] text-6xl uppercase">
+              Elevating Aesthetics
+            </h1>
+            <h1 class="text-xl">
+              h1>Crafting solutions and exploring new horizons. Evolivng
+              narratives and elevating aesthetics in every project.
+            </h1>
+          </div>
+          <div
+            class="panel w-1/3 translate-x-full h-screen bg-white absolute right-0 top-0 z-[2] p-10"
+          >
+            <h3 class="panelelem text-xl font-[100]">&copy; 2024 DOZE STD</h3>
+            <p class="panelelem mt-10 text-xl">
+              Sculpting Digital Transforming visions into digital realities.
+              Weaving stories that captivate and innovate. Exploring new
+              possibilities with a focus on narrative evolution. Crafting
+              solutions that engage and elevate.
+            </p>
+            <button
+              class="panelelem border-[1px] px-3 py-2 border-[#555] font-[100] mt-6"
+            >
+              Get Reviews →
+            </button>
+            <div class="panelelem absolute bottom-10">
+              <h3 class="text-xl">Innovating Design</h3>
+              <p class="text-sm mt-3">
+                Connecting ideas to faster creativity. Deasigning impactful
+                experiences that resonate. Feel free to mix and match these
+                selections to suit your website's design needs!
+              </p>
+              <button
+                class="bg-black text-white px-7 text-sm mt-4 py-4 font-[100] capitalize"
+              >
+                experience
+              </button>
             </div>
-            <div class="panel w-1/3 translate-x-full    h-screen bg-white absolute right-0 top-0 z-[2] p-10">
-                <h3 class="panelelem text-xl font-[100]">
-                    &copy; 2024 DOZE STD 
-                </h3>
-                <p class="panelelem mt-10 text-xl">
-                    Sculpting Digital 
-                    Transforming visions into digital realities. Weaving stories that captivate and innovate. Exploring new possibilities with a focus on narrative evolution. Crafting solutions that engage and elevate.
-                </p>
-                <button class="panelelem border-[1px] px-3 py-2 border-[#555] font-[100] mt-6 "> Get Reviews → </button>
-                <div class="panelelem absolute bottom-10">
-                    <h3 class="text-xl "> Innovating Design</h3>
-                    <p class="text-sm mt-3"> Connecting ideas to  faster creativity. Deasigning impactful experiences  that resonate.
-                        Feel free to mix and match these selections to suit your website's design needs!
-                    </p>
-                    <button class="bg-black text-white px-7 text-sm mt-4 py-4 font-[100] capitalize "> experience</button>
-                </div>
-                
-             </div>
+          </div>
 
-             <div class="panelism absolute z-[2] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  text-center  text-6xl  tracking-tighter opacity-0">
-                &copy; Panelism <span class="line w-10 h-1 bg-white inline-block "></span> 2048
-
-            </div>
+          <div
+            class="panelism absolute z-[2] text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-6xl tracking-tighter opacity-0"
+          >
+            &copy; Panelism
+            <span class="line w-10 h-1 bg-white inline-block"></span> 2048
+          </div>
         </div>
-
-    </div>
-    <div class="w-full min-h-screen bg-white  flex items-center justify-center flex-col">
-        <h1 class="uppercase text-8xl tracking-tighter mt-48 pt-72">&reg; Our recent works.</h1>
-        <div class=" headings w-2/3  p-3 mt-24 flex flex-col gap-8">
-            <h3 class="text-5xl">Innovative Design</h3>
-<h3 class="text-5xl">Seamless Animations</h3>
-<h3 class="text-5xl">Responsive Layout</h3>
-<h3 class="text-5xl">Interactive Elements</h3>
-<h3 class="text-5xl">Modern UI/UX</h3>
-<h3 class="text-5xl">Custom Components</h3>
-<h3 class="text-5xl">Optimized Performance</h3>
-<h3 class="text-5xl">Smooth Transitions</h3>
-<h3 class="text-5xl">Creative Web Solutions</h3>
-<h3 class="text-5xl">Advanced Features</h3>
-
+      </div>
+      <div
+        class="w-full min-h-screen bg-white flex items-center justify-center flex-col"
+      >
+        <h1 class="uppercase text-8xl tracking-tighter mt-48 pt-72">
+          &reg; Our recent works.
+        </h1>
+        <div class="headings w-2/3 p-3 mt-24 flex flex-col gap-8">
+          <h3 class="text-5xl">Innovative Design</h3>
+          <h3 class="text-5xl">Seamless Animations</h3>
+          <h3 class="text-5xl">Responsive Layout</h3>
+          <h3 class="text-5xl">Interactive Elements</h3>
+          <h3 class="text-5xl">Modern UI/UX</h3>
+          <h3 class="text-5xl">Custom Components</h3>
+          <h3 class="text-5xl">Optimized Performance</h3>
+          <h3 class="text-5xl">Smooth Transitions</h3>
+          <h3 class="text-5xl">Creative Web Solutions</h3>
+          <h3 class="text-5xl">Advanced Features</h3>
         </div>
-    </div>
+      </div>
     </div>
 
     <script
@@ -84,6 +117,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+
     <script src="index.js"></script>
   </body>
 </html>

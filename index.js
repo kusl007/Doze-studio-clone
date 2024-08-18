@@ -105,6 +105,21 @@ function startAnimation() {
     .to(frames, updateFrame(1345), "n")
     .to(".panelism", { scale: 2, ease: "circ" }, "n");
 }
+
+
+const lenis = new Lenis()
+
+
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+
+
+
 window.addEventListener("resize", function () {
   loadImage(Math.floor(frames.currentIndex));
 });
