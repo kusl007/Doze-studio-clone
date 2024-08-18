@@ -57,12 +57,21 @@ function startAnimation(){
             scrub:2,
         }
     });
-    tl.to(frames,{
-        currentIndex:frames.maxIndex,
-        onUpdate:function(){
-            loadImage(Math.floor(frames.currentIndex))
+    function updateFrame(index){
+        return {
+            currentIndex:index,
+            ease:"linear",
+            onUpdate:function(){
+                loadImage(Math.floor(frames.currentIndex))
+            }
         }
-    })
+    }
+
+    
+    tl
+    .to(frames,updateFrame(100),"a")
+    .to(".animate1",{opacity:0,ease:"linear"},"a")
+    // tl.to(frames,updateFrame(frames.maxIndex))
         
 
 }
