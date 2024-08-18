@@ -1,5 +1,5 @@
 
-const canvas=document.querySelector("canvas")
+const canvas=document.querySelector("#canvas")
 const context=canvas.getContext("2d")
 const frames={
     currentIndex:0,
@@ -53,6 +53,7 @@ function startAnimation(){
         scrollTrigger:{
             trigger:".parent",
             start:"top top",
+            end:"bottom bottom",
             scrub:2,
         }
     });
@@ -65,5 +66,8 @@ function startAnimation(){
         
 
 }
+window.addEventListener("resize",function(){
+    loadImage(Math.floor(frames.currentIndex))
+})
 
 preloadImages()
